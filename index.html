@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script src="scripts.js" defer></script>
+
     <title>Convert Money</title>
 </head>
 
@@ -30,44 +32,38 @@
 
         <label>
             para
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
-                <option>£ Libra Esterlina</option>
-                <option>₿ Bitcoin</option>
+            <select class="currency-select">
+                <option value="Dola">US$ Dólar Americano</option>
+                <option value="Euro">€ Euro</option>
+                <option value="Libra">£ Libra Esterlina</option>
+                <option value="Bitcoin">₿ Bitcoin</option>
             </select>
         </label>
 
         <label>
             valor
-            <input placeholder="Digite o valor">
+            <input class="input-currency" placeholder="Digite o valor">
         </label>
 
-        <button>Converter</button>
+        <button class="convert-button">Converter</button>
 
         <section>
             <div class="currency-box">
                 <img src="assets/real.png" alt="logo-a-converter">
                 <p class="currency"> Real Brasileiro </p>
-                <p class="currency-value"> R$ 0,00 </p>
+                <p class="currency-value-to-convert"> R$ 0,00 </p>
             </div>
 
             <img class="arrow-img" src="assets/seta.png" alt="seta-conversao">
 
             <div class="currency-box">
-                <img src="assets/dolar.png" alt="logo-moeda-convertida">
-                <p class="currency"> Dólar Americano </p>
+                <img class="currency-img" src="assets/dolar.png" alt="logo-moeda-convertida">
+                <p class="currency" id="currecy-name"> Dólar Americano </p>
                 <p class="currency-value"> U$ 0,00 </p>
             </div>
-            
+
         </section>
     </main>
-</body>
-
-</html>
-</div>
-</section>
-</main>
 </body>
 
 </html>
