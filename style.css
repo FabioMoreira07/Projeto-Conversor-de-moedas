@@ -110,7 +110,7 @@ section {
 }
 
 
-.currency-box {
+.currency-box1, .currency-box2 {
      display: flex;
      flex-direction: column;
      align-items: center;
